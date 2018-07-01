@@ -31,7 +31,8 @@ NV - Deep Neural Network
 Now inputs and outputs:
 
 NA: It takes in one number which is the 'delta R-R'. For those that do not know, in short, it is the time between two beats and spits out N for normal or A if it is abnormal.
-NV: It takes a waveform centered around every QRS complex with 0.4s padding in each side of the R point (so each is 0.8). The resolution has also been scaled down from 360Hz to 65Hz for performance purposes. It spits out N for normal and V for abnormal.
+
+NV: It takes a waveform centered around every QRS complex with 0.4s padding in each side of the R point (so each is 0.8). The frequency has also been scaled down from 360Hz to 65Hz for performance purposes. It spits out N for normal and V for abnormal.
 
 Training and evaluation is done through CSV files, detailed in the 'CSV Structure' section.
 
