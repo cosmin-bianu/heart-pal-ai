@@ -15,6 +15,7 @@ It uses predefined models and a different file with a different trained model fo
 As it is stated in the disclaimer (if you haven't read it, we strongly advise you to do so), the models were trained using data from the [PhysioBank Database](https://www.physionet.org/physiobank/). The MIT-BIH Arrhythmia Database (mitdb) to be precise. The naming scheme follows the one from the [PhysioBank Annotation guide](https://www.physionet.org/physiobank/annotations.shtml). So:
 
 A = Atrial premature beat
+
 V = Premature ventricular contraction
 
 Following this rule the files will be named with the prefix 'N' followed by the letter corresponding to the problem it assesses. For example, NA_model is the folder which houses the model for the 'atrial premature beat detection' AI.
@@ -24,6 +25,7 @@ Following this rule the files will be named with the prefix 'N' followed by the 
 The models used for each file ar as follows:
 
 NA - Linear Regression
+
 NV - Deep Neural Network
 
 Now inputs and outputs:
@@ -33,7 +35,7 @@ NV: It takes a waveform centered around every QRS complex with 0.4s padding in e
 
 Training and evaluation is done through CSV files, detailed in the 'CSV Structure' section.
 
-### Prerequisites
+## Prerequisites
 
 You need to have Python 2.7 installed. This will work with Python 3 but will require some code tinkering since the one distribuited here is designed for the former. 
 Then, you need to install Tensorflow.
@@ -44,7 +46,7 @@ pip install tensorflow
 ```
 Wait for the installation to finish. It will take a while. You can find the full Tensorflow install and troubleshooting guide on their website.
 
-### Usage
+## Usage
 
 Execution is designed for automated scripts. You will have to pass the test and evaluation files as arguments when running the training script.
 
@@ -68,7 +70,7 @@ Test set accuracy: 0.961
 ```
 
 
-###CSV Structure
+## CSV Structure
 
 NA: 2 Columns 
 1st column: delta time
@@ -113,8 +115,9 @@ This section will be updated soon.
 
 This project is made possible by the 'I.L. Caragiale' National College, Bucharest.
 
-Project Coordinator: Florea Andrei
-Lead Programming: Bianu Cosmin
+Project Leader: Florea Andrei
+
+Lead Programmer: Bianu Cosmin
 
 ## License
 
