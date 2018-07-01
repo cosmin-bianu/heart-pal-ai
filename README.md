@@ -93,16 +93,20 @@ Our approach was to run the scripts as services and read data from a buffer file
 
 ## Problems to solve
 
-
+```
 Problem: Numbers are hardcoded and may (quite defenitely) give different results. By our testing moving from breadboard to soldered connections doubled and almost tripled the values read from the AD converter (from 150 average normal raw values to 370-400). Even different ECG cables might bring in different such results.
+
 Solution at the moment: Eyeballing the value until everything aligns.
+
 Proposed solution: Adapting the numbers to fit in the learned range for better results.
-
-
+```
+```
 Problem: While this is not a critical issue at the moment since the synthetic testing proved quite successful, the models used are for general use.
-Solution at the moment: Using default models from the Tensorflow framework.
-Proposed solution: Tailored models which would prove more efficient from all aspects, from improved resource usage to better overall results.
 
+Solution at the moment: Using default models from the Tensorflow framework.
+
+Proposed solution: Tailored models which would prove more efficient from all aspects, from improved resource usage to better overall results.
+```
 ## Contributing
 
 This section will be updated soon.
