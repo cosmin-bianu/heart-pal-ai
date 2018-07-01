@@ -74,7 +74,7 @@ Test set accuracy: 0.961
 
 NA: 2 Columns 
 1st column: delta time
-2nd column: label(which can be either 'N' or 'A')
+2nd column: label (which can be either 'N' or 'A')
 
 NV: 7 Columns
 1-6 columns: waveform data
@@ -121,7 +121,7 @@ Lead Programmer: Bianu Cosmin
 
 ## License
 
-This project is licensed under the Apache 2.0 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
