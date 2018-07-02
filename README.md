@@ -45,7 +45,7 @@ Just open the terminal and type the following command
 ```
 pip install tensorflow
 ```
-Wait for the installation to finish. It will take a while. You can find the full Tensorflow install and troubleshooting guide on their website.
+Wait for the installation to finish. It will take a while. You can find the full Tensorflow install and troubleshooting guide [here](https://www.tensorflow.org/install/).
 
 ## Usage
 
@@ -53,7 +53,8 @@ Execution is designed for automated scripts. You will have to pass the test and 
 
 The first argument is the CSV file with the training data.
 The second argument is the CSV file with the evaluation data.
-!ORDER IS IMPORTANT
+
+ORDER IS IMPORTANT!
 
 An example for running the NA training and evaluating script.
 ```
@@ -72,14 +73,17 @@ Test set accuracy: 0.961
 
 
 ## CSV Structure
-
+```
 NA: 2 Columns 
 1st column: delta time
 2nd column: label (which can be either 'N' or 'A')
+```
 
+```
 NV: 7 Columns
 1-6 columns: waveform data
 7th column: label (which can be either 'N' or 'V')
+```
 
 ## Running the tests
 
