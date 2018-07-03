@@ -119,7 +119,9 @@ Proposed solution: Tailored models which would prove more efficient from all asp
 ```
 ```
 Problem: The model could be more optimized for mobile and less powerful hardware.
+
 Solution at the moment: Use the default flexible model.
+
 Proposed solution: Freeze the model and adapt it to work with TensorFlow Lite.
 ```
 ## Contributing
