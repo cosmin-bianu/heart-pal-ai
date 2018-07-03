@@ -10,7 +10,7 @@ This is the Heart Pal AI module. It is the core part of the project since it is 
 
 First of all, we STRONGLY suggest that you do some research on ECG's and how to read them. Sparkfun has some detailed and easy to understand resources on their page about [ECGs](https://learn.sparkfun.com/tutorials/ad8232-heart-rate-monitor-hookup-guide?_ga=2.240534727.572863605.1518885884-1726391607.1518537906).
 
-It uses the Tensorflow framework. 
+It uses the TensorFlow framework. 
 It uses predefined models and a different file with a different trained model for each heart problem detectable at the moment. 
 As it is stated in the disclaimer (if you haven't read it, we strongly advise you to do so), the models were trained using data from the [PhysioBank Database](https://www.physionet.org/physiobank/). The MIT-BIH Arrhythmia Database (mitdb) to be precise. The naming scheme follows the one from the [PhysioBank Annotation guide](https://www.physionet.org/physiobank/annotations.shtml). So:
 
@@ -39,14 +39,19 @@ Training and evaluation is done through CSV files, detailed in the 'CSV Structur
 ## Prerequisites
 
 You need to have Python 2.7 installed. This will work with Python 3 but will require some code tinkering since the one distribuited here is designed for the former. 
-Then, you need to install Tensorflow.
+Then, you need to install TensorFlow.
 
 Just open the terminal and type the following command
 ```
 pip install tensorflow
 ```
-Wait for the installation to finish. It will take a while. You can find the full Tensorflow install and troubleshooting guide [here](https://www.tensorflow.org/install/).
+Wait for the installation to finish. It will take a while. You can find the full TensorFlow install and troubleshooting guide [here](https://www.tensorflow.org/install/).
 
+Next you will have to install the pandas package for reading the CSV files.
+```
+pip install pandas
+```
+Now you are all set! If you encounter any problems please do not hesitate to contact us.
 ## Usage
 
 Execution is designed for automated scripts. You will have to pass the test and evaluation files as arguments when running the training script.
@@ -108,10 +113,14 @@ Proposed solution: Adapting the numbers to fit in the learned range for better r
 ```
 Problem: While this is not a critical issue at the moment since the synthetic testing proved quite successful, the models used are for general use.
 
-Solution at the moment: Using default models from the Tensorflow framework.
+Solution at the moment: Using default models from the TensorFlow framework.
 
 Proposed solution: Tailored models which would prove more efficient from all aspects, from improved resource usage to better overall results.
 ```
+```
+Problem: The model could be more optimized for mobile and less powerful hardware.
+Solution at the moment: Use the default flexible model.
+Proposed solution: Freeze the model and adapt it to work with TensorFlow Lite.
 ## Contributing
 
 This section will be updated soon.
