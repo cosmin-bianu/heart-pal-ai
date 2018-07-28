@@ -138,6 +138,8 @@ This project is made possible by the 'I.L. Caragiale' National College, Buchares
 
 Project Leader: Florea Andrei
 
+Cardiology specialist: Dr. Bucşă Adrian, Fundeni Hospital Bucharest
+
 Lead Programmer: Bianu Cosmin
 
 ## License
