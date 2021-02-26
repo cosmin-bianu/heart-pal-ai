@@ -10,8 +10,7 @@ This is the Heart Pal AI module. It is the core part of the project since it is 
 
 First of all, we STRONGLY suggest that you do some research on ECG's and how to read them. Sparkfun has some detailed and easy to understand resources on their page about [ECGs](https://learn.sparkfun.com/tutorials/ad8232-heart-rate-monitor-hookup-guide?_ga=2.240534727.572863605.1518885884-1726391607.1518537906).
 
-It uses the TensorFlow framework. 
-It uses predefined models and a different file with a different trained model for each heart problem detectable at the moment. 
+It uses the TensorFlow's predefined models and a different file with a different trained model for each heart problem detectable at the moment. 
 As it is stated in the disclaimer (if you haven't read it, we strongly advise you to do so), the models were trained using data from the [PhysioBank Database](https://www.physionet.org/physiobank/). The MIT-BIH Arrhythmia Database (mitdb) to be precise. The naming scheme follows the one from the [PhysioBank Annotation guide](https://www.physionet.org/physiobank/annotations.shtml). So:
 
 A = Atrial premature beat
