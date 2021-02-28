@@ -100,29 +100,6 @@ We haven't published any scripts for prediction since different use cases need d
 
 Our approach was to run the scripts as services and read data from a buffer file that was updated every five seconds. If the models noticed any anomalies then they would send a signal to the Android device and also record the event locally.
 
-## Problems to solve
-
-```
-Problem: Numbers are hardcoded and may (quite defenitely) give different results. By our testing moving from breadboard to soldered connections doubled and almost tripled the values read from the AD converter (from 150 average normal raw values to 370-400). Even different ECG cables might bring in different such results.
-
-Solution at the moment: Eyeballing the value until everything aligns.
-
-Proposed solution: Adapting the numbers to fit in the learned range for better results.
-```
-```
-Problem: While this is not a critical issue at the moment since the synthetic testing proved quite successful, the models used are for general use.
-
-Solution at the moment: Using default models from the TensorFlow framework.
-
-Proposed solution: Tailored models which would prove more efficient from all aspects, from improved resource usage to better overall results.
-```
-```
-Problem: The model could be more optimized for mobile and less powerful hardware.
-
-Solution at the moment: Use the default flexible model.
-
-Proposed solution: Freeze the model and adapt it to work with TensorFlow Lite.
-```
 ## Contributing
 
 This section will be updated soon.
