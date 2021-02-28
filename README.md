@@ -1,6 +1,6 @@
 # Heart Pal - Artificial Intelligence
 
-This is the Heart Pal AI module. It is the core part of the project since it is used to detect several types of abnormal heart rhythms. 
+This is the Heart Pal AI module. It is the core part of the project since it is used to detect several types of abnormal heart rhythm. 
 
  DISCLAIMER: The code has NOT been tested on an actual test subject. It has been tested only in virtual environments with real world prerecorded data from the PhyisioNet Database, which has data recorded in controlled environments with minimal phyiscal disturbance. It has not been tested on an actual patient live and as a result we do not know how it performs with the mentioned "phyisical disturbance".
 
